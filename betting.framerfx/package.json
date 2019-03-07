@@ -1,0 +1,19 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.4.16"
+	},
+	"peerDependencies": {
+		"framer": "^0.10",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"framer": {
+		"id": "5ed0b359-8701-44be-a7a2-7e87b6d6f3cc"
+	},
+	"author": "Daniel Caine",
+	"dependencies": {
+		"@framer/benjamin.grid": "^1.9.0"
+	}
+}
