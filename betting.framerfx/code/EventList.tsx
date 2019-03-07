@@ -47,8 +47,6 @@ export class EventList extends React.Component<Props> {
     this.setState({ 
       totalOdds: oddsArray.reduce(reducer, 1),
       payout: this.state.totalOdds * this.state.stake,
-    }, () => {
-        console.log('')
     })
   }
 

@@ -25,7 +25,10 @@
             "codeComponentProps" : {
 
             },
-            "codeOverrideEnabled" : false,
+            "codeOverrideEnabled" : true,
+            "codeOverrideFile" : ".\/App.tsx",
+            "codeOverrideIdentifier" : ".\/App.tsx_fillData",
+            "codeOverrideName" : "fillData",
             "constraintsLocked" : false,
             "exportOptions" : [
 
@@ -72,6 +75,9 @@
         ],
         "clip" : true,
         "codeOverrideEnabled" : true,
+        "codeOverrideFile" : ".\/App.tsx",
+        "codeOverrideIdentifier" : ".\/App.tsx_fillData",
+        "codeOverrideName" : "fillData",
         "constraintsLocked" : false,
         "deviceType" : null,
         "exportOptions" : [
@@ -101,7 +107,7 @@
         "isTarget" : false,
         "left" : 0,
         "locked" : false,
-        "name" : null,
+        "name" : "Frame",
         "navigationTarget" : null,
         "navigationTransition" : "push",
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
@@ -109,7 +115,14 @@
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
-        "previewSettings" : null,
+        "previewSettings" : {
+          "__class" : "PreviewSettings",
+          "bezel" : false,
+          "responsive" : true,
+          "rotate" : false,
+          "touch" : true,
+          "zoom" : -1
+        },
         "radius" : 0,
         "radiusBottomLeft" : 0,
         "radiusBottomRight" : 0,
@@ -122,7 +135,7 @@
         "rotation" : 0,
         "top" : 0,
         "visible" : true,
-        "width" : 360,
+        "width" : 791,
         "widthType" : 0
       },
       {
@@ -768,9 +781,7 @@
                     "top" : null,
                     "visible" : true,
                     "width" : 16,
-                    "widthType" : 0,
-                    "x" : 14,
-                    "y" : 7
+                    "widthType" : 0
                   }
                 ],
                 "clip" : false,
@@ -916,9 +927,7 @@
                 "top" : null,
                 "visible" : true,
                 "width" : 175,
-                "widthType" : 0,
-                "x" : 14,
-                "y" : 7
+                "widthType" : 0
               }
             ],
             "clip" : false,
@@ -1090,7 +1099,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "Green-Black-betPawa",
             "originalid" : null,
             "parentid" : "qeijwhN6k",
             "previewSettings" : null,
@@ -1310,9 +1318,7 @@
         "top" : 568,
         "visible" : true,
         "width" : 469,
-        "widthType" : 0,
-        "x" : 1845,
-        "y" : 398
+        "widthType" : 0
       }
     ],
     "id" : "lFv0qVvtF",
