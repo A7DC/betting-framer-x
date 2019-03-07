@@ -26,8 +26,8 @@
 
             },
             "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/App.tsx",
-            "codeOverrideIdentifier" : ".\/App.tsx_fillData",
+            "codeOverrideFile" : ".\/Examples.tsx",
+            "codeOverrideIdentifier" : ".\/Examples.tsx_fillData",
             "codeOverrideName" : "fillData",
             "constraintsLocked" : false,
             "exportOptions" : [
