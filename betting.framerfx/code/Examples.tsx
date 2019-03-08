@@ -58,11 +58,33 @@ const data = Data({
                 odds: 4.35
             },
         },
-    ]
+    ],
+    getSelection: null,
+    chosenBets: [
+        {},
+        {},
+        {},
+        {},
+        // if you add more default props have to add more default empty objects
+    ],
 })
 
 export const fillData: Override = () => {
     return {
-        events: data.events
+        events: data.events,
+        getSelection(val: object, matchNumber: number) {
+            // 1. Make a shallow copy of the items
+            let chosenBets = [...data.chosenBets]
+            // // 2. Make a shallow copy of the item you want to mutate
+            let bet = { ...chosenBets[matchNumber] }
+            // // 3. Replace the property you're intested in
+            bet = val
+            // // 4. Put it back into our array. N.B. we *are* mutating the array here, but that's why we made a copy first
+            data.chosenBets[matchNumber] = bet
+            // 5. Set the state to our new copy
+            // this.setState({ chosenBets: chosenBets }, () => console.log(this.state, 'state'))
+            // data.chosenBets.push(chosenBets)
+            console.log(data.chosenBets, 'data.chosenBets')
+        }
     }
 }
