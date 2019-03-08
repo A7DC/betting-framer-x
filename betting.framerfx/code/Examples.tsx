@@ -72,6 +72,7 @@ const data = Data({
 export const fillData: Override = () => {
     return {
         events: data.events,
+        chosenBets: data.chosenBets,
         getSelection(val: object, matchNumber: number) {
             // 1. Make a shallow copy of the items
             let chosenBets = [...data.chosenBets]
@@ -82,8 +83,6 @@ export const fillData: Override = () => {
             // // 4. Put it back into our array. N.B. we *are* mutating the array here, but that's why we made a copy first
             data.chosenBets[matchNumber] = bet
             // 5. Set the state to our new copy
-            // this.setState({ chosenBets: chosenBets }, () => console.log(this.state, 'state'))
-            // data.chosenBets.push(chosenBets)
             console.log(data.chosenBets, 'data.chosenBets')
         }
     }

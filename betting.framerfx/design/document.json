@@ -75,9 +75,7 @@
         ],
         "clip" : true,
         "codeOverrideEnabled" : true,
-        "codeOverrideFile" : ".\/App.tsx",
-        "codeOverrideIdentifier" : ".\/App.tsx_fillData",
-        "codeOverrideName" : "fillData",
+        "codeOverrideFile" : "Select…",
         "constraintsLocked" : false,
         "deviceType" : null,
         "exportOptions" : [

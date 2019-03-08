@@ -85,7 +85,8 @@ export class App extends React.Component<Props> {
   }
 
   componentDidMount() {
-    console.log(this.state.events)
+    // console.log(this.state.events)
+    // console.log(this.state.chosenBets)
   }
 
   static getDerivedStateFromProps(props: Props, state) {
@@ -96,8 +97,10 @@ export class App extends React.Component<Props> {
   }
 
   getSelection = (val: object, matchNumber: number) => {
-    const { getSelection } = this.props;
-    getSelection && getSelection(val, matchNumber);
+    const { getSelection } = this.props
+    getSelection && getSelection(val, matchNumber)
+    console.log(this.props.chosenBets, 'chosenBets props')
+    console.log(this.state.chosenBets, 'chosenBets state')
   }
 
   render() {
