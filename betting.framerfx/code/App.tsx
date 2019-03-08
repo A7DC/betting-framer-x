@@ -1,6 +1,7 @@
 import * as React from "react";
 import { EventList } from './EventList'
 import { BetSlip } from './BetSlip'
+import { Frame, Animatable, animate } from "framer";
 
 type Props = { 
   events: any,
@@ -94,11 +95,10 @@ export class App extends React.Component<Props> {
   getSelection = (val: object, matchNumber: number) => {
     const { getSelection } = this.props
     getSelection && getSelection(val, matchNumber)
-    console.log(this.props, ' props')
-    console.log(this.state, ' state')
     this.forceUpdate()
   }
 
+  aLeft = Animatable(0);
   render() {
     return (
       <div>
@@ -107,6 +107,11 @@ export class App extends React.Component<Props> {
           chosenBets={this.props.chosenBets}
           events={this.state.events}
           />
+        <BetSlip
+          chosenBets={this.state.chosenBets}
+          events={this.props.events}
+        />
+        {/* <Frame left={this.aLeft} onClick={() => animate(this.aLeft, 200)} /> */}
       </div>
     )
   }

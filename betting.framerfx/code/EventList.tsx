@@ -43,7 +43,7 @@ export class EventList extends React.Component<Props> {
     let oddsArray = []    
     chosenBets.map((val, i) => { oddsArray.push(val.odds) })
 
-    console.log(chosenBets, 'chosenBets from EventList.jsx')
+    // console.log(chosenBets, 'chosenBets from EventList.jsx')
     
     const reducer = (acc, currVal) => acc + (isNaN(currVal) ? 0 : currVal);
 

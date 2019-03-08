@@ -83,7 +83,7 @@ export const fillData: Override = () => {
             // // 4. Put it back into our array. N.B. we *are* mutating the array here, but that's why we made a copy first
             data.chosenBets[matchNumber] = bet
             // 5. Set the state to our new copy
-            console.log(data.chosenBets, 'data.chosenBets')
+            // console.log(data.chosenBets, 'data.chosenBets')
         }
     }
 }

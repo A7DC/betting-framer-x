@@ -8,7 +8,7 @@ type Props = {
 
 const Bet = ({ chosenBet, event }) => (
   <div>
-    <h6>${event.home.name} - ${event.away.name}`}</h6>
+    <h6>{event.home.name} - {event.away.name}</h6>
     <h5>{chosenBet.name}</h5>
     <h5>{chosenBet.odds}</h5>
   </div>
@@ -20,13 +20,15 @@ export class BetSlip extends React.Component<Props> {
     return (
     <div style={style}>
         {chosenBets.map((val, i) => {
-          return (
-              <Bet
-                key={i}
-                chosenBet={val}
-                event={this.props.events[i]}
-              />
-          )
+          if (val.name) {
+            return (
+                <Bet
+                  key={i}
+                  chosenBet={val}
+                  event={this.props.events[i]}
+                />
+            )
+          }
         })}
     </div>
     )
