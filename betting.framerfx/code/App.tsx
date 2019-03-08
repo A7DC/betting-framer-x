@@ -84,23 +84,19 @@ export class App extends React.Component<Props> {
     events: this.props.events
   }
 
-  componentDidMount() {
-    // console.log(this.state.events)
-    // console.log(this.state.chosenBets)
-  }
-
   static getDerivedStateFromProps(props: Props, state) {
     return {
       events: props.events,
       chosenBets: props.chosenBets,
     };
   }
-
+  
   getSelection = (val: object, matchNumber: number) => {
     const { getSelection } = this.props
     getSelection && getSelection(val, matchNumber)
-    console.log(this.props.chosenBets, 'chosenBets props')
-    console.log(this.state.chosenBets, 'chosenBets state')
+    console.log(this.props, ' props')
+    console.log(this.state, ' state')
+    this.forceUpdate()
   }
 
   render() {
@@ -108,7 +104,7 @@ export class App extends React.Component<Props> {
       <div>
         <EventList 
           getSelection={this.getSelection}  
-          chosenBets={this.state.chosenBets}
+          chosenBets={this.props.chosenBets}
           events={this.state.events}
           />
       </div>

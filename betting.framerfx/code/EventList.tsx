@@ -19,6 +19,7 @@ export class EventList extends React.Component<Props> {
   componentDidUpdate(prevProps) {
     const newProps = this.props
     if (prevProps !== newProps) { 
+      console.log(prevProps, 'prevProps')
       this.calculateTotal(this.state.stake, this.props.chosenBets)
       // this.calculateWinBonus()
     }
@@ -41,6 +42,8 @@ export class EventList extends React.Component<Props> {
 
     let oddsArray = []    
     chosenBets.map((val, i) => { oddsArray.push(val.odds) })
+
+    console.log(chosenBets, 'chosenBets from EventList.jsx')
     
     const reducer = (acc, currVal) => acc + (isNaN(currVal) ? 0 : currVal);
 
