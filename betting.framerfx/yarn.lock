@@ -11,6 +11,11 @@
     react "^16.3.0"
     react-dom "^16.3.0"
 
+"@framer/davidhellmann.8pt-grid@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.framer.com/@framer/davidhellmann.8pt-grid/-/@framer/davidhellmann.8pt-grid-1.2.0.tgz#451ff6da4a5d733e006da90f9b060b53c55b83af"
+  integrity sha1-RR/22kpdcz4AbakPmwYLU8Vbg68=
+
 "@types/prop-types@*":
   version "15.5.6"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
