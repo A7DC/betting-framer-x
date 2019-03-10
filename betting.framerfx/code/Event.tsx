@@ -1,4 +1,5 @@
-import * as React from "react";
+import * as React from 'react'
+import { color, scale } from './styles/variables'
 
 type Props = {
     home?: any,
@@ -7,45 +8,78 @@ type Props = {
     getSelection?: any,
     matchNumber?: any,
     chosenBet?: any,
-};
+}
 
 export class Event extends React.Component<Props> {
     render() {
-        const { home, away, draw, matchNumber, chosenBet } = this.props;
-
+        const { home, away, draw, matchNumber, chosenBet, getSelection } = this.props
+        console.log(matchNumber, ' matchNumber')
         return (
-            <div style={style}>
-                <button
-                    style={{ background: chosenBet == home.name ? "lightblue" : "white" }}
-                    onClick={() => this.props.getSelection(home, matchNumber)}
-                >
-                    {home.name}
-                </button>
-                <button
-                    style={{ background: chosenBet == draw.name ? "lightblue" : "white" }}
-                    onClick={() => this.props.getSelection(draw, matchNumber)}
-                >
-                    {draw.name}
-                </button>
-                <button
-                    style={{ background: chosenBet == away.name ? "lightblue" : "white" }}
-                    onClick={() => this.props.getSelection(away, matchNumber)}
-                >
-                    {away.name}
-                </button>
+            <div style={container}>
+                <Button 
+                    chosenBet={chosenBet}
+                    matchNumber={matchNumber}
+                    type={home}
+                    getSelection={getSelection}
+                />
+                <Button 
+                    chosenBet={chosenBet}
+                    matchNumber={matchNumber}
+                    type={draw}
+                    getSelection={getSelection}
+                />
+                <Button 
+                    chosenBet={chosenBet}
+                    matchNumber={matchNumber}
+                    type={away}
+                    getSelection={getSelection}
+                />
             </div>
-        );
+        )
     }
 }
 
+const Button = ({ chosenBet, matchNumber, type, getSelection}) => (
+    <button
+        style={button}
+        onClick={() => getSelection(type, matchNumber)}
+    >
+        <span style={{
+            ...icon,
+            background: chosenBet == type.name ? color.darkerlime : color.moonGray,
+            color: chosenBet == type.name ? color.white : color.lightSilver,
+            }}>1</span>
+        <span style={{
+            background: chosenBet == type.name ? color.lime : color.nearWhite,
+            color: chosenBet == type.name ? color.white : color.black,
+            ...content
+        }}>
+            {type.name}
+        </span>
+    </button>
+)
+
 // Define some standard CSS for your component
-const style: React.CSSProperties = {
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    color: "#8855FF",
-    background: "rgba(136, 85, 255, 0.1)",
-    overflow: "hidden"
-};
+const container: React.CSSProperties = {
+    overflow: 'hidden',
+    display: 'flex',
+}
+
+// Define some standard CSS for your component
+const button: React.CSSProperties = {
+    display: 'flex',
+    border: 'none',
+    borderRadius: scale.s1,
+    padding: 0,
+}
+
+// Define some standard CSS for your component
+const content: React.CSSProperties = {
+    padding: scale.s2,
+}
+
+// Define some standard CSS for your component
+const icon: React.CSSProperties = {
+    borderRadius: `${scale.s1} 0 0 ${scale.s1}`,
+    padding: scale.s2,
+}

@@ -1,6 +1,9 @@
 import * as React from "react";
 import { EventList } from './EventList'
 import { BetSlip } from './BetSlip'
+import { Header } from './Header'
+import './styles/fonts.css'
+import { color, scale, typeScale } from './styles/variables'
 import { Frame, Animatable, animate } from "framer";
 
 type Props = { 
@@ -100,13 +103,17 @@ export class App extends React.Component<Props> {
 
   aLeft = Animatable(0);
   render() {
+    
     return (
-      <div>
-        <EventList 
-          getSelection={this.getSelection}  
-          chosenBets={this.props.chosenBets}
-          events={this.state.events}
-          />
+      <div style={style}>
+        <Header chosenBets={this.props.chosenBets} />
+        <div style={outter}>
+          <EventList 
+            getSelection={this.getSelection}  
+            chosenBets={this.props.chosenBets}
+            events={this.state.events}
+            />
+        </div>
         <BetSlip
           chosenBets={this.state.chosenBets}
           events={this.props.events}
@@ -116,3 +123,23 @@ export class App extends React.Component<Props> {
     )
   }
 }
+
+// Define some standard CSS for your component
+const style: React.CSSProperties = {
+  height: "100%",
+  // display: "flex",
+  flexDirection: 'column',
+  fontFamily: 'proxima-nova, sans-serif',
+  background: 'rgb(237, 232, 237)'
+};
+
+const outter: React.CSSProperties = {
+  padding: scale.s3,
+  position: 'relative',
+  // display: 'flex',
+  height: '100%'
+};
+
+// font-family: proxima-nova, sans-serif;
+// font-weight: 400;
+// font-style: normal;

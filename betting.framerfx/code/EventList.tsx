@@ -1,5 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 import { Event } from './Event'
+import { color, scale, typeScale } from './styles/variables'
 
 type Props = { 
   getSelection: any,
@@ -23,7 +24,7 @@ export class EventList extends React.Component<Props> {
               draw={val.draw}
               getSelection={getSelection}
               chosenBet={
-                chosenBets[i] ? chosenBets[i]["name"] : "none"
+                chosenBets[i] ? chosenBets[i]['name'] : 'none'
               }
             />
           )
@@ -35,13 +36,12 @@ export class EventList extends React.Component<Props> {
 
 // Define some standard CSS for your component
 const style: React.CSSProperties = {
-  height: "100%",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
-  color: "#8855FF",
-  background: "rgba(136, 85, 255, 0.1)",
-  overflow: "hidden"
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  color: '#8855FF',
+  background: 'white',
+  overflow: 'hidden',
+  borderRadius: scale.s2,
+  padding: scale.s3,
 };
