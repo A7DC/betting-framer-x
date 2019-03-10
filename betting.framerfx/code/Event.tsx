@@ -92,6 +92,7 @@ const button: React.CSSProperties = {
 // Define some standard CSS for your component
 const content: React.CSSProperties = {
     padding: scale.s2,
+    flex: 1,
 }
 
 // Define some standard CSS for your component
