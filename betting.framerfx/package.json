@@ -2,6 +2,7 @@
 	"main": "dist/index.js",
 	"license": "MIT",
 	"devDependencies": {
+		"@framer/framer.device-skin-samsung-note-5-black": "^1.0.0",
 		"@types/react": "^16.4.16"
 	},
 	"peerDependencies": {

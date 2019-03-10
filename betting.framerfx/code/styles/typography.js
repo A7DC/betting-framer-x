@@ -2,7 +2,7 @@ import { typeScale, color, scale } from './variables'
 
 export const type = {
   t1: undefined,
-  t2: typeScale.f6,
+  t2: typeScale.f4,
   t5: {
     fontSize: typeScale.f5,
     color: color.black,

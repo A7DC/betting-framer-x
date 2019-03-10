@@ -16,6 +16,11 @@
   resolved "https://registry.framer.com/@framer/davidhellmann.8pt-grid/-/@framer/davidhellmann.8pt-grid-1.2.0.tgz#451ff6da4a5d733e006da90f9b060b53c55b83af"
   integrity sha1-RR/22kpdcz4AbakPmwYLU8Vbg68=
 
+"@framer/framer.device-skin-samsung-note-5-black@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.framer.com/@framer/framer.device-skin-samsung-note-5-black/-/@framer/framer.device-skin-samsung-note-5-black-1.0.0.tgz#6bcc9cf925c37457a9f1e9ac61898adf5b1d987f"
+  integrity sha512-YRpQ5WcXbSWxOf2GhVHfL326XdNgzY1aw7afh7kYkV7tiwU4t/XVEOmFa07phw6wDMnPThQK4nfL9RWXvOeRHg==
+
 "@types/prop-types@*":
   version "15.5.6"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"

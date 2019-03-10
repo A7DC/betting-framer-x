@@ -136,7 +136,9 @@
         ],
         "clip" : true,
         "codeOverrideEnabled" : true,
-        "codeOverrideFile" : "Select…",
+        "codeOverrideFile" : ".\/Examples.tsx",
+        "codeOverrideIdentifier" : ".\/Examples.tsx_fillData",
+        "codeOverrideName" : "fillData",
         "constraintsLocked" : false,
         "deviceType" : null,
         "exportOptions" : [
@@ -176,9 +178,11 @@
         "parentid" : "lFv0qVvtF",
         "previewSettings" : {
           "__class" : "PreviewSettings",
-          "bezel" : false,
-          "responsive" : true,
+          "bezel" : true,
+          "deviceType" : "framer\/FramerSamsungNote5",
+          "responsive" : false,
           "rotate" : false,
+          "skin" : "Black",
           "touch" : true,
           "zoom" : -1
         },
@@ -1159,9 +1163,7 @@
                         "top" : null,
                         "visible" : true,
                         "width" : 13,
-                        "widthType" : 0,
-                        "x" : 23,
-                        "y" : 17
+                        "widthType" : 0
                       }
                     ],
                     "clip" : false,
@@ -2353,9 +2355,7 @@
                         "top" : null,
                         "visible" : true,
                         "width" : 37,
-                        "widthType" : 0,
-                        "x" : 27,
-                        "y" : 26
+                        "widthType" : 0
                       }
                     ],
                     "clip" : false,
@@ -2901,9 +2901,7 @@
                     "top" : 144,
                     "visible" : true,
                     "width" : 13,
-                    "widthType" : 0,
-                    "x" : 27,
-                    "y" : 26
+                    "widthType" : 0
                   },
                   {
                     "__class" : "TextNode",
@@ -2993,9 +2991,7 @@
                     "top" : 144,
                     "visible" : true,
                     "width" : 15,
-                    "widthType" : 0,
-                    "x" : 27,
-                    "y" : 26
+                    "widthType" : 0
                   },
                   {
                     "__class" : "TextNode",
@@ -3085,9 +3081,7 @@
                     "top" : 144,
                     "visible" : true,
                     "width" : 17,
-                    "widthType" : 0,
-                    "x" : 27,
-                    "y" : 26
+                    "widthType" : 0
                   }
                 ],
                 "clip" : false,
@@ -3332,7 +3326,6 @@
                     "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
                     "navigationTransitionDirection" : "left",
                     "opacity" : 1,
-                    "originalFilename" : "Green-White-betPawa",
                     "originalid" : null,
                     "parentid" : "AlmlAwXVg",
                     "previewSettings" : null,
@@ -3668,9 +3661,7 @@
                     "top" : 19,
                     "visible" : true,
                     "width" : 63,
-                    "widthType" : 0,
-                    "x" : 35,
-                    "y" : 13
+                    "widthType" : 0
                   },
                   {
                     "__class" : "FrameNode",
@@ -3778,9 +3769,7 @@
                             "top" : 16,
                             "visible" : true,
                             "width" : 37,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           },
                           {
                             "__class" : "TextNode",
@@ -3870,9 +3859,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 7,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           }
                         ],
                         "clip" : false,
@@ -4027,9 +4014,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 37,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           },
                           {
                             "__class" : "TextNode",
@@ -4119,9 +4104,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 11,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           }
                         ],
                         "clip" : false,
@@ -4862,9 +4845,7 @@
                             "top" : 16,
                             "visible" : true,
                             "width" : 37,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           },
                           {
                             "__class" : "TextNode",
@@ -4954,9 +4935,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 7,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           }
                         ],
                         "clip" : false,
@@ -5111,9 +5090,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 37,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           },
                           {
                             "__class" : "TextNode",
@@ -5203,9 +5180,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 11,
-                            "widthType" : 0,
-                            "x" : 27,
-                            "y" : 26
+                            "widthType" : 0
                           }
                         ],
                         "clip" : false,
@@ -5888,7 +5863,6 @@
                     "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
                     "navigationTransitionDirection" : "left",
                     "opacity" : 1,
-                    "originalFilename" : "Green_betPawa_bolt",
                     "originalid" : null,
                     "parentid" : "lindfxv4D",
                     "previewSettings" : null,
@@ -5995,9 +5969,7 @@
                     "top" : 19,
                     "visible" : true,
                     "width" : 65,
-                    "widthType" : 0,
-                    "x" : 85,
-                    "y" : 248
+                    "widthType" : 0
                   },
                   {
                     "__class" : "CodeComponentNode",
@@ -6434,7 +6406,6 @@
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
         "navigationTransitionDirection" : "left",
         "opacity" : 1,
-        "originalFilename" : "Screenshot 2019-03-07 at 21.09.21",
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
         "previewSettings" : null,
@@ -6501,7 +6472,6 @@
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
         "navigationTransitionDirection" : "left",
         "opacity" : 1,
-        "originalFilename" : "Screenshot 2019-03-08 at 09.32.53.png",
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
         "previewSettings" : null,
@@ -6568,7 +6538,6 @@
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
         "navigationTransitionDirection" : "left",
         "opacity" : 1,
-        "originalFilename" : "Screenshot 2019-03-08 at 10.35.03.png",
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
         "previewSettings" : null,
@@ -6635,7 +6604,6 @@
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
         "navigationTransitionDirection" : "left",
         "opacity" : 1,
-        "originalFilename" : "Screenshot 2019-03-08 at 10.44.30.png",
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
         "previewSettings" : null,
@@ -10159,9 +10127,7 @@
                         "top" : null,
                         "visible" : true,
                         "width" : 68,
-                        "widthType" : 0,
-                        "x" : 118,
-                        "y" : 108
+                        "widthType" : 0
                       }
                     ],
                     "clip" : false,
@@ -12793,6 +12759,7 @@
                             "exportOptions" : [
 
                             ],
+                            "fillColor" : "rgba(0,0,0,1)",
                             "fillGradient" : {
                               "__class" : "LinearGradient",
                               "alpha" : 1,
@@ -13229,9 +13196,7 @@
                         "top" : null,
                         "visible" : true,
                         "width" : 68,
-                        "widthType" : 0,
-                        "x" : 118,
-                        "y" : 108
+                        "widthType" : 0
                       }
                     ],
                     "clip" : false,
@@ -13564,9 +13529,7 @@
                 "top" : 23,
                 "visible" : true,
                 "width" : 149,
-                "widthType" : 0,
-                "x" : 40,
-                "y" : 28
+                "widthType" : 0
               },
               {
                 "__class" : "TextNode",
@@ -13656,9 +13619,7 @@
                 "top" : 23,
                 "visible" : true,
                 "width" : 68,
-                "widthType" : 0,
-                "x" : 40,
-                "y" : 28
+                "widthType" : 0
               }
             ],
             "clip" : false,
@@ -17122,9 +17083,7 @@
                         "top" : null,
                         "visible" : true,
                         "width" : 68,
-                        "widthType" : 0,
-                        "x" : 118,
-                        "y" : 108
+                        "widthType" : 0
                       }
                     ],
                     "clip" : false,
@@ -19756,6 +19715,7 @@
                             "exportOptions" : [
 
                             ],
+                            "fillColor" : "rgba(0,0,0,1)",
                             "fillGradient" : {
                               "__class" : "LinearGradient",
                               "alpha" : 1,
@@ -20192,9 +20152,7 @@
                         "top" : null,
                         "visible" : true,
                         "width" : 68,
-                        "widthType" : 0,
-                        "x" : 118,
-                        "y" : 108
+                        "widthType" : 0
                       }
                     ],
                     "clip" : false,
@@ -21203,51 +21161,45 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 35,
+                                        "length" : 27,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 18,
+                                        "length" : 27,
                                         "offset" : 0,
                                         "style" : "COLOR:#333333"
                                       },
                                       {
-                                        "length" : 11,
-                                        "offset" : 21,
-                                        "style" : "COLOR:#333333"
-                                      },
-                                      {
-                                        "length" : 35,
+                                        "length" : 27,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:-0.1"
                                       },
                                       {
-                                        "length" : 35,
+                                        "length" : 27,
                                         "offset" : 0,
                                         "style" : "FONT:ProximaNova-Semibold"
                                       },
                                       {
-                                        "length" : 35,
+                                        "length" : 27,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
-                                      },
-                                      {
-                                        "length" : 3,
-                                        "offset" : 18,
-                                        "style" : "COLOR:#999999"
-                                      },
-                                      {
-                                        "length" : 3,
-                                        "offset" : 32,
-                                        "style" : "COLOR:#999999"
                                       }
                                     ],
                                     "key" : "4r8r0",
-                                    "text" : "Manchester United (1) - Arsenal (2)",
+                                    "text" : "Manchester United - Arsenal",
                                     "type" : "unstyled"
                                   }
                                 ],
+                                "cached" : {
+                                  "html" : "<div data-offset-key=\"4r8r0-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"4r8r0-0-0\" style=\"tab-size:4;font-weight:600;font-family:&quot;ProximaNova-Semibold&quot;, &quot;Proxima Nova&quot;, serif;-webkit-text-fill-color:#333333;font-size:14px;letter-spacing:-0.1px;line-height:1.2\"><span data-text=\"true\">Manchester United - Arsenal<\/span><\/span><\/div>",
+                                  "os" : "10_14",
+                                  "size" : {
+                                    "height" : 16,
+                                    "width" : 177
+                                  },
+                                  "width" : 0
+                                },
                                 "entityMap" : {
 
                                 }
@@ -22279,58 +22231,52 @@
                                   ],
                                   "inlineStyleRanges" : [
                                     {
-                                      "length" : 35,
+                                      "length" : 27,
                                       "offset" : 0,
                                       "style" : "LINEHEIGHT:1.2"
                                     },
                                     {
-                                      "length" : 18,
+                                      "length" : 27,
                                       "offset" : 0,
                                       "style" : "COLOR:#333333"
                                     },
                                     {
-                                      "length" : 11,
-                                      "offset" : 21,
-                                      "style" : "COLOR:#333333"
-                                    },
-                                    {
-                                      "length" : 35,
+                                      "length" : 27,
                                       "offset" : 0,
                                       "style" : "LETTERSPACING:-0.1"
                                     },
                                     {
-                                      "length" : 35,
+                                      "length" : 27,
                                       "offset" : 0,
                                       "style" : "FONT:ProximaNova-Semibold"
                                     },
                                     {
-                                      "length" : 35,
+                                      "length" : 27,
                                       "offset" : 0,
                                       "style" : "SIZE:14"
-                                    },
-                                    {
-                                      "length" : 3,
-                                      "offset" : 18,
-                                      "style" : "COLOR:#999999"
-                                    },
-                                    {
-                                      "length" : 3,
-                                      "offset" : 32,
-                                      "style" : "COLOR:#999999"
                                     }
                                   ],
                                   "key" : "4r8r0",
-                                  "text" : "Manchester United (1) - Arsenal (2)",
+                                  "text" : "Manchester United - Arsenal",
                                   "type" : "unstyled"
                                 }
                               ],
+                              "cached" : {
+                                "html" : "<div data-offset-key=\"4r8r0-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"4r8r0-0-0\" style=\"tab-size:4;font-weight:600;font-family:&quot;ProximaNova-Semibold&quot;, &quot;Proxima Nova&quot;, serif;-webkit-text-fill-color:#333333;font-size:14px;letter-spacing:-0.1px;line-height:1.2\"><span data-text=\"true\">Manchester United - Arsenal<\/span><\/span><\/div>",
+                                "os" : "10_14",
+                                "size" : {
+                                  "height" : 16,
+                                  "width" : 177
+                                },
+                                "width" : 0
+                              },
                               "entityMap" : {
 
                               }
                             },
                             "top" : 2,
                             "visible" : true,
-                            "width" : 212,
+                            "width" : 177,
                             "widthType" : 0
                           },
                           {
@@ -26832,7 +26778,7 @@
             "right" : 0,
             "rotation" : 0,
             "top" : 0,
-            "visible" : true,
+            "visible" : false,
             "width" : 360,
             "widthType" : 0
           }
@@ -36182,9 +36128,7 @@
         "top" : -541,
         "visible" : true,
         "width" : 330,
-        "widthType" : 0,
-        "x" : 394,
-        "y" : -751
+        "widthType" : 0
       },
       {
         "__class" : "FrameNode",
@@ -36234,7 +36178,6 @@
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
         "navigationTransitionDirection" : "left",
         "opacity" : 1,
-        "originalFilename" : "Screenshot 2019-03-08 at 14.22.19.png",
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
         "previewSettings" : null,
@@ -36301,7 +36244,6 @@
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
         "navigationTransitionDirection" : "left",
         "opacity" : 1,
-        "originalFilename" : "Screenshot 2019-03-08 at 14.04.31.png",
         "originalid" : null,
         "parentid" : "lFv0qVvtF",
         "previewSettings" : null,

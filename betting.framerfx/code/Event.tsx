@@ -14,7 +14,7 @@ type Props = {
 export class Event extends React.Component<Props> {
     render() {
         const { home, away, draw, matchNumber, chosenBet, getSelection } = this.props
-        console.log(matchNumber, ' matchNumber')
+        // console.log(matchNumber, ' matchNumber')
         return (
             <div style={container}>
                 <div style={{

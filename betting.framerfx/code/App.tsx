@@ -1,8 +1,8 @@
 import * as React from "react";
 import { EventList } from './EventList'
 import { BetSlip } from './BetSlip'
+import { BetSlipPreview } from './BetSlipPreview'
 import { Header } from './Header'
-import './styles/fonts.css'
 import { color, scale, typeScale } from './styles/variables'
 import { Frame, Animatable, animate } from "framer";
 
@@ -85,7 +85,7 @@ export class App extends React.Component<Props> {
 
   state = {
     chosenBets: this.props.chosenBets,
-    events: this.props.events
+    events: this.props.events,
   }
 
   static getDerivedStateFromProps(props: Props, state) {
@@ -94,6 +94,16 @@ export class App extends React.Component<Props> {
       chosenBets: props.chosenBets,
     };
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps !== this.props) {
+    }
+    if (prevState !== this.state) {
+      console.log(this.state, "state")
+      console.log(prevState, "prevState")
+    }
+  }
+  
   
   getSelection = (val: object, matchNumber: number) => {
     const { getSelection } = this.props
@@ -118,6 +128,7 @@ export class App extends React.Component<Props> {
           chosenBets={this.state.chosenBets}
           events={this.props.events}
         />
+        <BetSlipPreview chosenBets={this.state.chosenBets}/>
         {/* <Frame left={this.aLeft} onClick={() => animate(this.aLeft, 200)} /> */}
       </div>
     )
