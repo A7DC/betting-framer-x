@@ -26832,7 +26832,7 @@
             "right" : 0,
             "rotation" : 0,
             "top" : 0,
-            "visible" : false,
+            "visible" : true,
             "width" : 360,
             "widthType" : 0
           }

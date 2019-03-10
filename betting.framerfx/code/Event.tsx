@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { color, scale } from './styles/variables'
+import { type } from './styles/typography'
 
 type Props = {
     home?: any,
@@ -16,24 +17,35 @@ export class Event extends React.Component<Props> {
         console.log(matchNumber, ' matchNumber')
         return (
             <div style={container}>
-                <Button 
-                    chosenBet={chosenBet}
-                    matchNumber={matchNumber}
-                    type={home}
-                    getSelection={getSelection}
-                />
-                <Button 
-                    chosenBet={chosenBet}
-                    matchNumber={matchNumber}
-                    type={draw}
-                    getSelection={getSelection}
-                />
-                <Button 
-                    chosenBet={chosenBet}
-                    matchNumber={matchNumber}
-                    type={away}
-                    getSelection={getSelection}
-                />
+                <div style={{
+                    width: '100%'
+                }}>
+                    <h5 style={type.t5}>{`${home.name} (1) - ${away.name} (2)`}</h5>
+                    <h6 style={type.t6}>English Premier League {/* need to get from Data object */}</h6>
+                </div>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row'
+                }}>
+                    <Button 
+                        chosenBet={chosenBet}
+                        matchNumber={matchNumber}
+                        type={home}
+                        getSelection={getSelection}
+                    />
+                    <Button 
+                        chosenBet={chosenBet}
+                        matchNumber={matchNumber}
+                        type={draw}
+                        getSelection={getSelection}
+                    />
+                    <Button 
+                        chosenBet={chosenBet}
+                        matchNumber={matchNumber}
+                        type={away}
+                        getSelection={getSelection}
+                    />
+                </div>
             </div>
         )
     }
@@ -54,7 +66,7 @@ const Button = ({ chosenBet, matchNumber, type, getSelection}) => (
             color: chosenBet == type.name ? color.white : color.black,
             ...content
         }}>
-            {type.name}
+            {type.odds}
         </span>
     </button>
 )
@@ -63,11 +75,15 @@ const Button = ({ chosenBet, matchNumber, type, getSelection}) => (
 const container: React.CSSProperties = {
     overflow: 'hidden',
     display: 'flex',
+    flexDirection: 'column',
+    margin: `0 0 ${scale.s4}px 0`
 }
 
 // Define some standard CSS for your component
 const button: React.CSSProperties = {
     display: 'flex',
+    flexBasis: '33%',
+    flexGrow: 0,
     border: 'none',
     borderRadius: scale.s1,
     padding: 0,

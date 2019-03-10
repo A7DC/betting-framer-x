@@ -12,8 +12,7 @@ export const color = {
   white: 'rgb(255, 255, 255)',
   nearWhite: 'rgb(244, 242, 244)',
   moonGray: 'rgb(221, 221, 221)',
-  lightSilver: 'rgb(153, 153, 153)'
-  
+  lightSilver: 'rgb(153, 153, 153)',
 }
 
 export const scale = {
@@ -25,8 +24,9 @@ export const scale = {
   s6: 128,
 }
 
+
 export const typeScale = {
-  t1: 12,
-  t2: 14,
-  t3: 18,
+  f6: 12,
+  f5: 14,
+  f4: 18,
 }
