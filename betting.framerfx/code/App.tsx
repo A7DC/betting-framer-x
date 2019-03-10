@@ -92,26 +92,24 @@ export class App extends React.Component<Props> {
     return {
       events: props.events,
       chosenBets: props.chosenBets,
-    };
+    }
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevProps !== this.props) {
-    }
-    if (prevState !== this.state) {
-      console.log(this.state, "state")
-      console.log(prevState, "prevState")
-    }
-  }
-  
-  
   getSelection = (val: object, matchNumber: number) => {
-    const { getSelection } = this.props
-    getSelection && getSelection(val, matchNumber)
-    this.forceUpdate()
+    // 1. Make a shallow copy of the items
+    let chosenBets = [...this.props.chosenBets]
+    // // 2. Make a shallow copy of the item you want to mutate
+    let bet = { ...chosenBets[matchNumber] }
+    // // 3. Replace the property you're intested in
+    bet = val
+    // // 4. Put it back into our array. N.B. we *are* mutating the array here, but that's why we made a copy first
+    this.props.chosenBets[matchNumber] = bet
+
+    this.setState({chosenBets: chosenBets})
+            // 5. Set the state to our new copy
+            // console.log(data.chosenBets, 'data.chosenBets')
   }
 
-  aLeft = Animatable(0);
   render() {
     
     return (
