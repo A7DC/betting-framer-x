@@ -110,6 +110,7 @@ export class App extends React.Component<Props> {
             // console.log(data.chosenBets, 'data.chosenBets')
   }
 
+
   render() {
     
     return (
@@ -140,15 +141,11 @@ const style: React.CSSProperties = {
   flexDirection: 'column',
   fontFamily: 'proxima-nova, sans-serif',
   background: 'rgb(237, 232, 237)'
-};
+}
 
 const outter: React.CSSProperties = {
   padding: scale.s3,
   position: 'relative',
   // display: 'flex',
   height: '100%'
-};
-
-// font-family: proxima-nova, sans-serif;
-// font-weight: 400;
-// font-style: normal;
+}
