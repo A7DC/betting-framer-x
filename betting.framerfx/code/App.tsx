@@ -4,6 +4,7 @@ import { BetSlip } from './BetSlip'
 import { BetSlipPreview } from './BetSlipPreview'
 import { Header } from './Header'
 import { scale } from './styles/variables'
+import { Frame, Animatable, animate } from "framer";
 
 type Props = { 
   events: any,
@@ -169,9 +170,14 @@ export class App extends React.Component<Props> {
             // console.log(data.chosenBets, 'data.chosenBets')
   }
 
+  bottom = Animatable(200);
+
+  onClick = async () => {
+    await animate(this.bottom, 200).finished
+    await animate(this.bottom, 200).finished
+  };
 
   render() {
-    
     return (
       <div style={style}>
         <Header chosenBets={this.props.chosenBets} />
@@ -186,8 +192,9 @@ export class App extends React.Component<Props> {
           chosenBets={this.state.chosenBets}
           events={this.props.events}
           />
-        <BetSlipPreview chosenBets={this.state.chosenBets}/>
-        {/* <Frame left={this.aLeft} onClick={() => animate(this.aLeft, 200)} /> */}
+        <Frame top={-180} width={'100%'} bottom={this.bottom} onClick={() => animate(this.bottom, 200)}> 
+          <BetSlipPreview chosenBets={this.state.chosenBets}/>
+        </Frame>
       </div>
     )
   }
