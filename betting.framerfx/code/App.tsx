@@ -1,10 +1,9 @@
-import * as React from "react";
+import * as React from "react"
 import { EventList } from './EventList'
 import { BetSlip } from './BetSlip'
 import { BetSlipPreview } from './BetSlipPreview'
 import { Header } from './Header'
-import { color, scale, typeScale } from './styles/variables'
-import { Frame, Animatable, animate } from "framer";
+import { scale } from './styles/variables'
 
 type Props = { 
   events: any,
@@ -72,9 +71,69 @@ export class App extends React.Component<Props> {
           odds: 4.35
         },
       },
+      {
+        home: {
+          name: 'Real Madrid',
+          odds: 1.69
+        },
+        away: {
+          name: 'Ajax',
+          odds: 5.00
+        },
+        draw: {
+          name: 'Draw',
+          odds: 4.20
+        },
+      },
+      {
+        home: {
+          name: 'Derby County',
+          odds: 2.00
+        },
+        away: {
+          name: 'Wigan Athletic',
+          odds: 3.00
+        },
+        draw: {
+          name: 'Draw',
+          odds: 4.35
+        },
+      },
+      {
+        home: {
+          name: 'Fullham',
+          odds: 3.00
+        },
+        away: {
+          name: 'Chelsea FC',
+          odds: 5.00
+        },
+        draw: {
+          name: 'Draw',
+          odds: 4.35
+        },
+      },
+      {
+        home: {
+          name: 'Celtic',
+          odds: 3.00
+        },
+        away: {
+          name: 'Rangers',
+          odds: 4.00
+        },
+        draw: {
+          name: 'Draw',
+          odds: 4.35
+        },
+      },
     ],
     getSelection: null,
     chosenBets: [
+      {},
+      {},
+      {},
+      {},
       {},
       {},
       {},
@@ -116,17 +175,17 @@ export class App extends React.Component<Props> {
     return (
       <div style={style}>
         <Header chosenBets={this.props.chosenBets} />
-        <div style={outter}>
-          <EventList 
-            getSelection={this.getSelection}  
-            chosenBets={this.props.chosenBets}
-            events={this.state.events}
-            />
-        </div>
+          <div style={outter}>
+              <EventList
+                getSelection={this.getSelection}
+                chosenBets={this.props.chosenBets}
+                events={this.state.events}
+              />
+          </div>
         <BetSlip
           chosenBets={this.state.chosenBets}
           events={this.props.events}
-        />
+          />
         <BetSlipPreview chosenBets={this.state.chosenBets}/>
         {/* <Frame left={this.aLeft} onClick={() => animate(this.aLeft, 200)} /> */}
       </div>
@@ -137,8 +196,6 @@ export class App extends React.Component<Props> {
 // Define some standard CSS for your component
 const style: React.CSSProperties = {
   height: "100%",
-  // display: "flex",
-  flexDirection: 'column',
   fontFamily: 'proxima-nova, sans-serif',
   background: 'rgb(237, 232, 237)'
 }
@@ -146,6 +203,7 @@ const style: React.CSSProperties = {
 const outter: React.CSSProperties = {
   padding: scale.s3,
   position: 'relative',
-  // display: 'flex',
-  height: '100%'
+  height: '100%',
+  width: '100%',
+  
 }

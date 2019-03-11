@@ -10,7 +10,7 @@ type Props = {
 export class BetSlipPreview extends React.Component<Props> {
   state = {
     totalBets: 0,
-    nextLevelIn: 5,
+    nextLevelIn: 3,
     bonus: 10
   }
 
@@ -24,18 +24,41 @@ export class BetSlipPreview extends React.Component<Props> {
   }
 
   calculateWinBonus(totalBets) {
-    if (totalBets <= 5) {
-      let nextLevelIn = 5
-      for (let i = 0; i <= 5; i++) {
+
+    if (totalBets <= 3) {
+      for (let i = 0; i <= 3; i++) {
         if (totalBets === i) {
-          // return '10%'
           this.setState({ 
-            nextLevelIn: Math.abs(i - nextLevelIn),
+            nextLevelIn: Math.abs(i - 3),
             bonus: this.state.bonus,
           }, () => console.log(this.state.nextLevelIn, 'nextLevelIn'))
         }
       }
     } 
+
+    if (totalBets >= 3 && totalBets <= 5) {
+      for (let i = 0; i <= 5; i++) {
+        if (totalBets === i) {
+          this.setState({ 
+            nextLevelIn: Math.abs(i - 5),
+            bonus: 50,
+          }, () => console.log(this.state.nextLevelIn, 'nextLevelIn'))
+        }
+      }
+    } 
+
+    if (totalBets >= 5 && totalBets <= 6) {
+      for (let i = 0; i <= 6; i++) {
+        if (totalBets === i) {
+          this.setState({ 
+            nextLevelIn: Math.abs(i - 6),
+            bonus: 100,
+          }, () => console.log(this.state.nextLevelIn, 'nextLevelIn'))
+        }
+      }
+    } 
+
+
   }
 
   render() {
@@ -46,7 +69,7 @@ export class BetSlipPreview extends React.Component<Props> {
         <h3 style={{
           fontSize: type.t2,
           color: color.yellow,
-        }}>{this.state.bonus}% win bonus in {this.state.nextLevelIn} bets</h3>
+        }}>{this.state.bonus === 100 ? '100% win bonus!' : `${this.state.bonus}% win bonus in ${this.state.nextLevelIn} bets`}</h3>
         <div style={{display: 'flex'}}>
           <span>{this.state.totalBets} bets in slip</span>
           <span style={{ marginLeft: 'auto' }}>Price: $price</span>

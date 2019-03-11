@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Event } from './Event'
 import { color, scale, typeScale } from './styles/variables'
+import { Scroll } from "framer";
 
 type Props = { 
   getSelection: any,
@@ -37,11 +38,10 @@ export class EventList extends React.Component<Props> {
 // Define some standard CSS for your component
 const style: React.CSSProperties = {
   height: '100%',
-  display: 'flex',
-  flexDirection: 'column',
+  width: '100%',
   color: '#8855FF',
   background: 'white',
-  overflow: 'hidden',
   borderRadius: scale.s2,
   padding: scale.s3,
+  overflow: 'scroll'
 };
