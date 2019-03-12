@@ -45513,33 +45513,33 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 34,
+                      "length" : 35,
                       "offset" : 0,
                       "style" : "FONT:ProximaNova-Semibold"
                     },
                     {
-                      "length" : 34,
+                      "length" : 35,
                       "offset" : 0,
                       "style" : "LETTERSPACING:-0.1"
                     },
                     {
-                      "length" : 34,
+                      "length" : 35,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 34,
+                      "length" : 35,
                       "offset" : 0,
                       "style" : "SIZE:18"
                     },
                     {
-                      "length" : 34,
+                      "length" : 35,
                       "offset" : 0,
                       "style" : "COLOR:rgba(255, 222, 20, 1.00)"
                     }
                   ],
                   "key" : "4nnlg",
-                  "text" : "Add another 3 bets for a 10% bonus",
+                  "text" : "Add another 10 bets for a 50% bonus",
                   "type" : "unstyled"
                 },
                 {
@@ -45570,7 +45570,7 @@
             },
             "top" : 30,
             "visible" : true,
-            "width" : 284,
+            "width" : 296,
             "widthType" : 0
           },
           {
